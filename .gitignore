@@ -1,3 +1,6 @@
+# Vim temporary files
+.*.swp
+#
 # Local testing vcf
 AM_RIC_AM_ES_with_right_caller.vcf
 
