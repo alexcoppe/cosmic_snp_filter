@@ -78,11 +78,22 @@ bio_id *get_cosmic_ids(char *line){
 
 
 void print_cosmic_ids_list(bio_id *start) {
-    /*puts("Inizio");*/
-
     while (start->next != NULL) {
         printf("Identifier: %s\n", start->identifier);
         start = start->next;
     }
     printf("Identifier: %s\n", start->identifier);
+}
+
+
+void free_cosmic_ids(bio_id *cosmic_ids) {
+    bio_id *deleted_bio_id = cosmic_ids;
+    bio_id *next = NULL;
+
+    while (deleted_bio_id != NULL) {
+        next = deleted_bio_id->next;
+        free(deleted_bio_id->identifier);
+        free(deleted_bio_id);
+        deleted_bio_id = next;
+    }
 }

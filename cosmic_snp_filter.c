@@ -128,6 +128,7 @@ int main(int argc, char *argv[]){
         }
         
         free(original_line);
+        free_cosmic_ids(bio_ids_list);
     }
 
 
