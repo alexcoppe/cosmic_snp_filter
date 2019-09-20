@@ -1,6 +1,6 @@
 /*
  * Author: Alessandro Coppe
- * Purpose: filter an annotated VCF file based on dbNSFP_FATHMM_rankscore 
+ * Purpose: removes variants annotated with Cosmic that are indicated as SNP
  * Language: C
  * 
  *  (c) 2019 Coppe

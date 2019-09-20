@@ -1,6 +1,6 @@
 /*
  * Author: Alessandro Coppe
- * Purpose: filter an annotated VCF file based on dbNSFP_FATHMM_rankscore 
+ * Purpose: removes variants annotated with Cosmic that are indicated as SNP
  * Language: C
  * 
  *  (c) 2019 Coppe
@@ -9,13 +9,6 @@
 
 #include<stdio.h>
 #include<stdlib.h>
-/*#include<unistd.h>*/
-/*#include<getopt.h>*/
-/*#include<ctype.h>*/
-/*#include<string.h>*/
-/*#include "uthash.h"*/
-/*#include"is_a_snp_in_cosmic.h"*/
-
 
 char *get_ids(char *);
 
