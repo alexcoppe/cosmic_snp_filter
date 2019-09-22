@@ -1,6 +1,7 @@
 # Files build by autotools
 .deps
 aclocal.m4
+autom4te.cache/*
 autom4te.cache
 compile
 configure
