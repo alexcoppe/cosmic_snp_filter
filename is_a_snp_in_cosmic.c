@@ -20,7 +20,7 @@
 
 void print_HASH_FIND_STR_RESULT(struct cosmic_entry *s) {
     if (s != NULL)
-        printf("Found COSM: %s\n", s->name);
+        fprintf(stdout, "Found COSM: %s\n", s->name);
     else
         puts("Could not find COSMIC identifier");
 }

@@ -74,10 +74,10 @@ bio_id *get_cosmic_ids(char *line){
 
 void print_cosmic_ids_list(bio_id *start) {
     while (start->next != NULL) {
-        printf("Identifier: %s\n", start->identifier);
+        fprintf(stdout, "Identifier: %s\n", start->identifier);
         start = start->next;
     }
-    printf("Identifier: %s\n", start->identifier);
+    fprintf(stdout, "Identifier: %s\n", start->identifier);
 }
 
 

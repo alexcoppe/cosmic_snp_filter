@@ -98,7 +98,7 @@ int main(int argc, char *argv[]){
         original_line = strdup(line);
 
         if (line[0] == '#')
-            printf("%s", original_line);
+            fprintf(stdout, "%s", original_line);
         else {
             ids_from_vcf = get_ids(line);
             bio_ids_list = get_cosmic_ids(ids_from_vcf);
@@ -124,7 +124,7 @@ int main(int argc, char *argv[]){
             }
 
             if (is_snp == 0)
-                printf("%s", original_line);
+                fprintf(stdout, "%s", original_line);
         }
         
         free(original_line);
