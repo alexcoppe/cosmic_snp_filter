@@ -1,0 +1,16 @@
+.TH man 8 "25 Septs 2019" "1.0" "cosmic_snp_filter man page"
+.SH NAME
+cosmic_snp_filter \- filter out variants with a SNPs from a VCF file that are found in COSMIC
+.SH SYNOPSIS
+cosmic_snp_filter [-h] COSMIC_VCF VCF_to_filter
+.SH DESCRIPTION
+Given a VCF file annotated with both dbSNP and COSMIC, it removes the SNPs present in the CosmicCodingMuts84.vcf (or newer versions) or CosmicNonCodingVariants.vcf files. The problem comes from the fact that the VCF annotated with dbSNP contains SNPs that could also be genetically dangerous and they should not be thrown-away.
+
+The COSMIC VCFs, both the coding and non coding, are not freely available for everyone. You should sign up to COSMIC using your university email. COSMIC data is completely free to academic research communities, but commercial users should contact COSMIC for licences which are priced according to organisation size.
+.SH OPTIONS
+.IP "\fB\-h"
+print a brief help message
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Alessandro Coppe
