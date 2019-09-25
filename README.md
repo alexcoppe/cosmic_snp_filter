@@ -7,6 +7,8 @@ The problem comes from the fact that the VCF annotated with [dbSNP](https://www.
 
 The COSMIC VCFs, both the coding and non coding, are not freely available for everyone. You should sign up to [COSMIC](https://cancer.sanger.ac.uk/cosmic) using your university email. [COSMIC](https://cancer.sanger.ac.uk/cosmic) data is completely free to academic research communities, but commercial users should contact [COSMIC](https://cancer.sanger.ac.uk/cosmic) for licences which are priced according to organisation size.
 
+It uses [uthash](https://troydhanson.github.io/uthash/), a hash table for C structures using COSMIC IDS as keys.
+
 ### Usage
 
 The VCF to be filtered shoud be annotated with COSMIC using [SnpSift](http://snpeff.sourceforge.net/SnpSift.html) software:
