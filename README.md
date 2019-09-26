@@ -1,5 +1,7 @@
 # cosmic_snp_filter
 
+[![Build Status](https://travis-ci.org/alexcoppe/cosmic_snp_filter.svg?branch=master)](https://travis-ci.org/alexcoppe/cosmic_snp_filter)
+
 ### Remove COSMIC SNP variants from a VCF file
 
 Given a VCF file annotated with both [dbSNP](https://www.ncbi.nlm.nih.gov/snp/) and [COSMIC](https://cancer.sanger.ac.uk/cosmic), it removes the SNPs present in the CosmicCodingMuts84.vcf or CosmicNonCodingVariants.vcf files.
