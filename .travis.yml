@@ -1,0 +1,15 @@
+language: c
+
+sudo: required
+
+compiler:
+    - clang
+    - gcc
+
+before_install:
+    - sudo apt-get install -y gcc
+    - sudo apt-get install -y make
+    - sudo apt-get install -y automake
+      
+script:
+    - gcc -o cosmic_snp_filter cosmic_snp_filter.c get_ids.c is_a_snp_in_cosmic.c
